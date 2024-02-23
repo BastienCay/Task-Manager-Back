@@ -31,29 +31,5 @@ public class CompteServiceImpl implements CompteService {
         }
 
     }
-/*
-    public List<Compte> findAll(){
-        return compteRepository.findAll();
-    }
-
-    public Compte findById(Long id) {
-        return compteRepository.findById(id).orElseThrow( () -> new NotFoundException("Compte introuvable"));
-    }
-
-
-
-    public Compte update(Compte compte) {
-        return compteRepository.save(compte);
-    }
-
-    public void deleteById(Long id) {
-        compteRepository.deleteById(id);
-    }
-
-    public void deleteAll() {
-        compteRepository.deleteAll();
-    }
-
-    */
 
 }

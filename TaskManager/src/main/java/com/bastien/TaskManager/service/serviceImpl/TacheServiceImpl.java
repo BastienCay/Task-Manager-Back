@@ -32,6 +32,7 @@ public class TacheServiceImpl implements TacheService {
         Tache tache = new Tache();
 
         tache.setNom(tacheDTO.getNom());
+
         if (tacheDTO.getDescription() != null) {
             tache.setDescription(tacheDTO.getDescription());
         }
@@ -73,6 +74,7 @@ public class TacheServiceImpl implements TacheService {
     }
 
     public Tache achiverTache (Long idTache) {
+        // Récuperer uniquement les tâches actives pour ne pas pouvoir archiver une tâche déjà archivée
         Optional<Tache> optTache = tacheRepository.getTacheActive(idTache);
         if (optTache.isEmpty()) {
             throw new NotFoundException("Aucune tache trouvée pour l'id " + idTache);

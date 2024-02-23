@@ -10,9 +10,7 @@ public class UtilisateurDTO {
 
     private String nom;
 
-
     private String prenom;
-
 
     private Role role;
 

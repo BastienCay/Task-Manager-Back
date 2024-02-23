@@ -8,10 +8,15 @@ import lombok.Data;
 public class TacheDTO {
 
     private String nom;
+
     private String description;
+
     private String commentaire;
+
     private Etat etat;
+
     private Priorite priorite;
+
     private boolean isArchive;
 
 }

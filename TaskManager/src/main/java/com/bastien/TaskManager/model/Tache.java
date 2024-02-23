@@ -23,10 +23,8 @@ public class Tache implements Serializable {
     @NotNull
     private String nom;
 
-
     @Size(max = 512)
     private String description;
-
 
     @Size(max = 512)
     private String commentaire;
@@ -39,7 +37,6 @@ public class Tache implements Serializable {
     @Enumerated(EnumType.STRING)
     private Priorite priorite;
 
-
     private boolean isArchive;
 
     @ManyToMany
@@ -47,7 +44,5 @@ public class Tache implements Serializable {
             joinColumns = @JoinColumn(name = "utilisateur_id"),
             inverseJoinColumns = @JoinColumn(name = "tache_id"))
     private List<Utilisateur> listUtilisateur;
-
-
 
 }

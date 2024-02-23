@@ -17,7 +17,7 @@ public class UtilisateurController {
         this.utilisateurService = utilisateurService;
     }
 
-    //création d'un utilisateur une fois que le compte a été créé
+    //Création d'un utilisateur une fois que le compte a été créé
     @PostMapping("/add/{idCompte}")
     public void creerUtilisateur (@RequestBody UtilisateurDTO utilisateurDto, @PathVariable Long idCompte) {
         Objects.requireNonNull(utilisateurDto.getNom(), "Le nom ne peut pas être vide");

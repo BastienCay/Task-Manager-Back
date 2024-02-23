@@ -18,7 +18,7 @@ public class CompteController {
     }
 
 
-//création d'un compte lors d'un premier log sur l'application
+//Création d'un compte lors d'un premier log sur l'application
 @PostMapping("/add")
     public void creerCompte (@RequestBody CompteDTO compteDTO) {
 
